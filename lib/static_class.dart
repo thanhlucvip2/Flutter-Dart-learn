@@ -1,3 +1,1 @@
-class StaticClass {
-  static int a = 5;
-}
+class StaticClass {}

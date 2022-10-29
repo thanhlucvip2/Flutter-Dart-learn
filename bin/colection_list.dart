@@ -1,10 +1,17 @@
-import 'package:dart_app/static_class.dart';
-
-void main(List<String> arguments) {
-  collection_set();
-}
+// dimanic list
 
 // ignore: non_constant_identifier_names
+// ADD
+void collection_list() {
+  var country = ['vietnam', 'dsadas', 'dasd'];
+  country.add('test');
+  print(country); // [vietnam, dsadas, dasd, test]
+
+  country.insert(1, 'test insert');
+  print(country); // [vietnam, test insert, dsadas, dasd, test]
+}
+
+// SET
 void collection_set() {
   var anotherSet = {1, 7, 3, 5, 2};
   print(anotherSet.contains(100)); // false
