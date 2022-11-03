@@ -1,5 +1,3 @@
-// dimanic list
-
 // ignore: non_constant_identifier_names
 // ADD
 void collection_list() {
@@ -28,4 +26,29 @@ void collection_set() {
   var declareSet = <int>{15, 17, 20};
   anotherSet = anotherSet.union(declareSet);
   print(anotherSet); // {1, 7, 5, 2, 9, 8, 6, 15, 17, 20}
+}
+
+// MAP
+void colection_map() {
+  final student = {
+    "id": 1,
+    "name": "Barry Allen",
+    "age": 23,
+  };
+
+  print(student); //{id: 1, name: Barry Allen, age: 23}
+
+  print(student["name"]); // Barry Allen
+
+  student.keys.forEach(print); // id name age
+
+  student.update("age", (value) => 20);
+  print(student); //{id: 1, name: Barry Allen, age: 20}
+
+  student.forEach((key, value) {
+    print('$key - $value');
+  });
+  // id - 1
+  // name - Barry Allen
+  // age - 20
 }
